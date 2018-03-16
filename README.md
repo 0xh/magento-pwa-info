@@ -40,6 +40,8 @@ Enkel demo. Niet van Magento zelf.  Nog niet open source. Maar ze gaan het ooit 
 - https://demo.deity.io/
 - https://demo.deity.io/about/
 
+## Links
+
 ### Bronnen
 
 - https://community.magento.com/t5/Magento-DevBlog/Introducing-Magento-PWA-Studio/ba-p/74636
@@ -49,6 +51,8 @@ Enkel demo. Niet van Magento zelf.  Nog niet open source. Maar ze gaan het ooit 
 - https://developers.google.com/web/progressive-web-apps/checklist
 - https://developers.google.com/web/fundamentals/primers/service-workers/
 
+### Andere handige links
 
+- chrome://inspect/#service-workers
 
 
