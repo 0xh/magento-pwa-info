@@ -56,6 +56,19 @@ class App extends React.Component {
         this.nextSlide();
     }
 
+    fsToggle() {
+        let elem = document.getElementById("root");
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+        } else if (elem.mozRequestFullScreen) {
+            elem.mozRequestFullScreen();
+        } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+    }
+
     keyStroke(e) {
         switch (e.keyCode) {
             case 37:
@@ -67,6 +80,9 @@ class App extends React.Component {
             case 38:
             case 39:
                 this.nextSlide();
+                break;
+            case 70: // f
+                this.fsToggle();
                 break;
         }
     }
