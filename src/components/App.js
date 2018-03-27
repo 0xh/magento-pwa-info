@@ -9,13 +9,10 @@ class App extends React.Component {
     constructor() {
         super();
         this.bodyClick = this.bodyClick.bind(this);
+        this.keyStroke = this.keyStroke.bind(this);
     }
 
-    nextSlide() {
-        this.slideIndex++;
-        if (this.slideIndex >= this.slides.length) {
-            this.slideIndex = -1;
-        }
+    showSlide() {
         if (this.slideIndex === -1) {
             this.props.history.push('/');
         } else {
@@ -23,19 +20,51 @@ class App extends React.Component {
         }
     }
 
+    nextSlide() {
+        this.slideIndex++;
+        if (this.slideIndex >= this.slides.length) {
+            this.slideIndex = -1;
+        }
+        this.showSlide();
+    }
+
+    prevSlide() {
+        this.slideIndex--;
+        if (this.slideIndex < -1) {
+            this.slideIndex = this.slides.length - 1;
+        }
+        this.showSlide();
+    }
+
     componentDidMount() {
         this.slides = SlidesAPI.all();
         this.slideIndex = -1;
         document.body.addEventListener("click", this.bodyClick);
+        window.addEventListener("keyup", this.keyStroke);
     }
 
     componentWillUnmount () {
         document.body.removeEventListener('click', this.bodyClick);
+        window.removeEventListener("keyup", this.keyStroke);
     }
 
     bodyClick() {
-        console.log('body click');
         this.nextSlide();
+    }
+
+    keyStroke(e) {
+        switch (e.keyCode) {
+            case 37:
+            case 40:
+                this.prevSlide();
+                break;
+            case 13:
+            case 32:
+            case 38:
+            case 39:
+                this.nextSlide();
+                break;
+        }
     }
 
     render() {
