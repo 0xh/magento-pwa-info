@@ -1,0 +1,40 @@
+.lib-clearfix() {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.lib-link(
+    @_link-color: @link__color,
+    @_link-text-decoration: @link__text-decoration,
+    @_link-color-visited: @link__visited__color,
+    @_link-text-decoration-visited: @link__visited__text-decoration,
+    @_link-color-hover: @link__hover__color,
+    @_link-text-decoration-hover: @link__hover__text-decoration,
+    @_link-color-active: @link__active__color,
+    @_link-text-decoration-active: @link__active__text-decoration
+) {
+    color: @_link-color;
+    text-decoration: @_link-text-decoration;
+
+    &:visited {
+        color: @_link-color-visited;
+        text-decoration: @_link-text-decoration-visited;
+    }
+
+    &:hover {
+        color: @_link-color-hover;
+        text-decoration: @_link-text-decoration-hover;
+    }
+
+    &:active {
+        color: @_link-color-active;
+        text-decoration: @_link-text-decoration-active;
+    }
+}

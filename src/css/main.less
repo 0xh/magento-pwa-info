@@ -1,0 +1,159 @@
+@import "_var.less";
+@import "_lib.less";
+
+body {
+    background: @color-theme-background;
+    color: @color-theme-text;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: @color-theme-subtitle;
+    font-family: 'Nunito', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: @color-theme-subtitle;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    .lib-link();
+}
+
+.ta-center {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+// sticky footer
+
+html, body, #root {
+    height: 100%;
+}
+
+.page-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    min-height: 100%;
+}
+
+header, footer {
+    -webkit-flex: initial;
+    flex: initial;
+}
+
+main {
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+// wrappers
+
+.content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+
+    .content-wrapper {
+        padding: 0 4rem;
+    }
+}
+
+// footer
+
+.copyright {
+    text-align: center;
+    padding: 2rem 0;
+    color: @color-theme-hint;
+}
+
+// buttons
+
+button {
+    box-sizing: content-box;
+    font-family: 'Nunito';
+    font-size: 1rem;
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 5px 0 @color-theme-highlight-shade;
+    background: @color-theme-highlight;
+    color: @color-theme-background;
+    cursor: pointer;
+}
+
+a.btn,
+a.btn:hover,
+a.btn:active,
+a.btn:link,
+a.btn:visited {
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    font-size: 1rem;
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 5px 0 @color-theme-highlight-shade;
+    background: @color-theme-highlight;
+    color: @color-theme-background;
+    text-decoration: none;
+}
+
+button,
+a.btn {
+
+    svg + span {
+        margin: 0 0 0 .5em;
+    }
+}
+
+button:hover,
+a.btn:hover {
+    margin-top: 1px;
+    margin-bottom: -1px;
+    box-shadow: 0 4px 0 @color-theme-highlight-shade;
+}
+
+button:active,
+a.btn:active {
+    margin-top: 4px;
+    margin-bottom: -4px;
+    box-shadow: 0 1px 0 @color-theme-highlight-shade;
+}
+
+button:focus,
+a.btn:focus {
+    outline: none;
+}
+
+ul.slides-list {
+    margin: 2rem 0 4rem;
+    padding: 0;
+    list-style: none;
+    .lib-clearfix();
+
+    li {
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        font-family: 'Nunito';
+        font-size: 1.25rem;
+    }
+}
