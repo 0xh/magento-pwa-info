@@ -8,6 +8,14 @@ const SlidesAPI = {
     get: function(url) {
         const isSlide = s => s.url === url;
         return this.slides.find(isSlide);
+    },
+    slideIndex: function(url) {
+        for (let s = 0; s < this.slides.length; s++) {
+            if (this.slides.url === url) {
+                return s;
+            }
+        }
+        return -1;
     }
 }
 

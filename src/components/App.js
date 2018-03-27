@@ -39,6 +39,10 @@ class App extends React.Component {
     componentDidMount() {
         this.slides = SlidesAPI.all();
         this.slideIndex = -1;
+        let paths = this.props.history.location.pathname.split('/');
+        if (paths[2]) {
+            this.slideIndex = SlidesAPI.slideIndex(paths[2]);
+        }
         document.body.addEventListener("click", this.bodyClick);
         window.addEventListener("keyup", this.keyStroke);
     }
