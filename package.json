@@ -1,11 +1,11 @@
 {
   "name": "magento-pwa-info",
   "version": "0.0.1",
-  "description": "## Weetjes",
+  "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,26 @@
   "bugs": {
     "url": "https://github.com/Quinten/magento-pwa-info/issues"
   },
-  "homepage": "https://github.com/Quinten/magento-pwa-info#readme"
+  "homepage": "https://github.com/Quinten/magento-pwa-info#readme",
+  "devDependencies": {
+    "ajv": "^6.2.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-markdown": "^3.3.0",
+    "react-router-dom": "^4.2.2"
+  }
 }
