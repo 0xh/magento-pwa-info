@@ -50,6 +50,7 @@ Enkel demo. Niet van Magento zelf.  Nog niet open source. Maar ze gaan het ooit 
 - https://github.com/css-modules/css-modules
 - https://developers.google.com/web/progressive-web-apps/checklist
 - https://developers.google.com/web/fundamentals/primers/service-workers/
+- https://blog.kollegorna.se/service-worker-gotchas-af20a9dab986
 
 ### Andere handige links
 
