@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 h1 {
-  color: #e056fd;
+  color: #c7ecee;
   font-family: 'Nunito', sans-serif;
 }
 h2,
@@ -43,6 +43,8 @@ html,
 body,
 #root {
   height: 100%;
+  width: 100%;
+  background: #535c68;
 }
 .page-wrapper {
   display: -webkit-flex;
@@ -140,47 +142,11 @@ ul.slides-list:after {
 }
 ul.slides-list li {
   display: block;
-  margin-bottom: 3rem;
+  margin-bottom: .5rem;
 }
 ul.slides-list a {
   display: block;
-  text-align: left;
+  text-align: center;
   font-family: 'Nunito';
   font-size: 1.25rem;
-  color: #e056fd;
-  text-decoration: none;
-}
-ul.slides-list a:visited {
-  color: #e056fd;
-  text-decoration: none;
-}
-ul.slides-list a:hover {
-  color: #be2edd;
-  text-decoration: none;
-}
-ul.slides-list a:active {
-  color: #be2edd;
-  text-decoration: none;
-}
-@media (min-width: 417px) {
-  .slides-list li {
-    width: 50%;
-    float: left;
-    box-sizing: border-box;
-  }
-  .slides-list li:nth-child(odd) {
-    clear: both;
-    padding-right: .5rem;
-  }
-  .slides-list li:nth-child(even) {
-    padding-left: .5rem;
-  }
-}
-@media (min-width: 769px) {
-  .slides-list li:nth-child(odd) {
-    padding-right: 2rem;
-  }
-  .slides-list li:nth-child(even) {
-    padding-left: 2rem;
-  }
 }
