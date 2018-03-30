@@ -3,6 +3,7 @@ body {
   color: #dff9fb;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  cursor: pointer;
 }
 h1 {
   color: #c7ecee;
