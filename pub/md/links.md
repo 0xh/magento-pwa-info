@@ -1,4 +1,4 @@
-# Handige links
+## Handige links
 
 - https://community.magento.com/t5/Magento-DevBlog/Introducing-Magento-PWA-Studio/ba-p/74636
 - https://reacticon.org/intro

@@ -1,9 +1,11 @@
 const SlidesAPI = {
     slides: [
-        { url: 'intro', name: "Intro", description: "" },
-        { url: 'middle', name: "Middle", description: "" },
-        { url: 'links', name: "Handige links", description: "" },
-        { url: 'outro', name: "Outro", description: "" }
+        { url: 'weetjes', name: "Weetjes", description: "" },
+        { url: 'details', name: "Technische Details", description: "" },
+        { url: 'oplossingen', name: "Bestaande oplossingen", description: "" },
+        { url: 'vue-storefront', name: "Vue-storefront", description: "" },
+        { url: 'deity', name: "Deity", description: "" },
+        { url: 'links', name: "Handige links", description: "" }
     ],
     all: function() { return this.slides},
     get: function(url) {

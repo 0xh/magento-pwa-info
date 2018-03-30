@@ -10,19 +10,17 @@ Wordt onderdeel van Magento 2.3 (zomer 2018)
 
 Magento's project noemt PWA Studio
 
-De technologie van Magento zal worden gebouwd op React, Redux, JSX, Webpack, ...
+De technologie van Magento zal worden gebouwd op React, Redux, Webpack, Workbox, ...
 
 ## Technische details
 
 Er zal nog maar 1 phtml file zijn met de basis css inline. (Application shell)
 
-Interactie met Magento via API calls
+Interactie met Magento via API calls (Headless)
 
-Service Workers zijn proxies voor api calls en kunnen scripts uitvoeren in de achtergrond
+Service Workers zorgen voor caching (offline-first)
 
-Css modules (scoping, ...)
-
-## Bestaande Magento 2 PWA oplossingeni
+## Bestaande Magento 2 PWA oplossingen
 
 ### vue-storefront
 
