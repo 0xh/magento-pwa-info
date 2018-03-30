@@ -1,1 +1,3 @@
 node_modules/
+pub/sw.js
+pub/build/precache-manifest.*.js

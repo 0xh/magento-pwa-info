@@ -3,11 +3,12 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 const extractLess = new ExtractTextPlugin({
     //filename: "[name].[contenthash].css",
     filename: "[name].css"
 });
+
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
 
@@ -39,7 +40,28 @@ module.exports = {
         ]
     },
     plugins: [
-        extractLess
+        extractLess,
+        new WorkboxPlugin.GenerateSW({
+            swDest: '../sw.js',
+            cacheId: 'magento-pwa-info',
+            // precache
+            globDirectory: './pub',
+            globPatterns: ['build/*.css', 'build/fontawesome-all.min.js', 'md/*.md', '*.html'],
+            // one page
+            navigateFallback: '/index.html',
+            navigateFallbackWhitelist: [/^\/slides/],
+            // fonts
+            runtimeCaching: [{
+                urlPattern: /fonts/,
+                handler: 'cacheFirst',
+                options: {
+                    cacheName: 'fonts',
+                    expiration: {
+                        maxEntries: 5
+                    }
+                },
+            }]
+        })
     ],
 
     devServer: {
