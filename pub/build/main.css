@@ -69,6 +69,9 @@ main {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
+main ul {
+  text-align: left;
+}
 .content-wrapper {
   max-width: 960px;
   margin: 0 auto;

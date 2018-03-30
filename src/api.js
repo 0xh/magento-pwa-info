@@ -2,6 +2,7 @@ const SlidesAPI = {
     slides: [
         { url: 'intro', name: "Intro", description: "" },
         { url: 'middle', name: "Middle", description: "" },
+        { url: 'links', name: "Handige links", description: "" },
         { url: 'outro', name: "Outro", description: "" }
     ],
     all: function() { return this.slides},
