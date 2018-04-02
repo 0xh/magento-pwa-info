@@ -16,5 +16,11 @@
     ],
     "theme_color": "#dff9fb",
     "background_color": "#dff9fb",
-    "display": "standalone"
+    "display": "standalone",
+    "scope": "/",
+    "serviceworker": {
+        "src": "sw.js",
+        "scope": "/",
+        "update_via_cache": "none"
+    }
 }
