@@ -49,7 +49,7 @@ module.exports = {
             globPatterns: ['build/*.css', 'build/fontawesome-all.min.js', 'md/*.md', '*.html'],
             // one page
             navigateFallback: '/index.html',
-            navigateFallbackWhitelist: [/^\/slides/],
+            navigateFallbackWhitelist: [/^\//, /^\/slides/],
             // fonts
             runtimeCaching: [{
                 urlPattern: /fonts/,
