@@ -68,13 +68,15 @@ module.exports = {
                     }
                 },
             }],
+            /*
             manifestTransforms: [
                 // fix for url normalisation of netlify
                 (entries) => {
                     entries.forEach((entry) => {entry.url = (entry.url === '/') ? '' : entry.url});
                     return {manifest: entries, warnings: []};
                 }
-            ]
+            ],
+            */
         }),
     ],
 
