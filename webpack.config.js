@@ -47,7 +47,7 @@ module.exports = {
             importWorkboxFrom: 'local',
             // precache
             globDirectory: './pub',
-            globPatterns: ['**/*.css', 'build/fontawesome-all.min.js', 'md/*.md', '*.html'],
+            globPatterns: ['**/*.css', 'site.webmanifest', 'build/fontawesome-all.min.js', 'md/*.md', '*.html'],
             // one page
             navigateFallback: '/index.html',
             navigateFallbackWhitelist: [/^\/slides/],
