@@ -52,6 +52,9 @@ module.exports = {
             navigateFallback: '/index.html',
             navigateFallbackWhitelist: [/^\/slides/],
             directoryIndex: 'index.html',
+            templatedUrls: {
+                '/': 'root-version-1',
+            },
             // fonts
             runtimeCaching: [{
                 urlPattern: /fonts/,
@@ -63,7 +66,7 @@ module.exports = {
                     }
                 },
             }]
-        })
+        }),
     ],
 
     devServer: {
