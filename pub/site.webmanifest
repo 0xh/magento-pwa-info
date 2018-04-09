@@ -1,7 +1,7 @@
 {
     "name": "Magento PWA info",
     "short_name": "PWA info",
-    "start_url": "https://magento-pwa-info.netlify.com/",
+    "start_url": "https://magento-pwa-info.supernapie.com",
     "icons": [
         {
             "src": "/icons/android-chrome-192x192.png",
