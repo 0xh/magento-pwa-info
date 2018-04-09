@@ -15,8 +15,8 @@ module.exports = {
     entry: './src/index.js',
 
     output: {
-        path: path.resolve(__dirname, 'pub/build'),
-        publicPath: '/build/',
+        path: path.resolve(__dirname, 'pub/'),
+        publicPath: '/',
         filename: 'project.bundle.js'
     },
 
@@ -42,12 +42,12 @@ module.exports = {
     plugins: [
         extractLess,
         new WorkboxPlugin.GenerateSW({
-            swDest: '../sw.js',
+            swDest: 'sw.js',
             cacheId: 'magento-pwa-info',
             importWorkboxFrom: 'local',
             // precache
             globDirectory: './pub',
-            globPatterns: ['build/*.css', 'build/fontawesome-all.min.js', 'md/*.md', '*.html'],
+            globPatterns: ['**/*.css', 'build/fontawesome-all.min.js', 'md/*.md', '*.html'],
             // one page
             navigateFallback: '/index.html',
             navigateFallbackWhitelist: [/^\/slides/],
