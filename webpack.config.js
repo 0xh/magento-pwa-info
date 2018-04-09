@@ -44,6 +44,7 @@ module.exports = {
         new WorkboxPlugin.GenerateSW({
             swDest: '../sw.js',
             cacheId: 'magento-pwa-info',
+            importWorkboxFrom: 'local',
             // precache
             globDirectory: './pub',
             globPatterns: ['build/*.css', 'build/fontawesome-all.min.js', 'md/*.md', '*.html'],
