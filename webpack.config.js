@@ -45,6 +45,8 @@ module.exports = {
             swDest: 'sw.js',
             cacheId: 'magento-pwa-info',
             importWorkboxFrom: 'local',
+            clientsClaim: true,
+            skipWaiting: true,
             // precache
             globDirectory: './pub',
             globPatterns: ['**/*.css', 'site.webmanifest', 'build/fontawesome-all.min.js', 'md/*.md', '*.html'],
