@@ -11,6 +11,7 @@ const SlidesAPI = {
         { url: 'vue-storefront', name: "Vue-storefront", description: "" },
         { url: 'deity', name: "Deity", description: "" },
         { url: 'manifest', name: "Web app manifest file", description: "" },
+        { url: 'tools', name: "Tools", description: "" },
         { url: 'links', name: "Handige links", description: "" }
     ],
     all: function() { return this.slides},
