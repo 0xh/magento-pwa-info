@@ -10,6 +10,7 @@ const SlidesAPI = {
         { url: 'oplossingen', name: "Bestaande oplossingen", description: "" },
         { url: 'vue-storefront', name: "Vue-storefront", description: "" },
         { url: 'deity', name: "Deity", description: "" },
+        { url: 'frontcommerce', name: "Front Commerce", description: "" },
         { url: 'strategy', name: "Strategie", description: "" },
         { url: 'manifest', name: "Web app manifest file", description: "" },
         { url: 'tools', name: "Tools", description: "" },
