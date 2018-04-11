@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div className="content-wrapper">
                 <div className="copyright">
-                    <small>&copy; {year} Quinten Clause</small>
+                    <small>&copy; {year} Quinten Clause - Mathijs Delva</small>
                 </div>
             </div>
         </footer>
