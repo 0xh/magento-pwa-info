@@ -2,12 +2,6 @@
 
 const webpack = require('webpack');
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const extractLess = new ExtractTextPlugin({
-    //filename: "[name].[contenthash].css",
-    filename: "[name].css"
-});
-
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
@@ -24,13 +18,13 @@ module.exports = {
         rules: [
             {
                 test: /\.less$/,
-                use: extractLess.extract({
-                    use: [{
-                        loader: "css-loader"
-                    }, {
-                        loader: "less-loader"
-                    }]
-                })
+                use: [{
+                    loader: "style-loader" // creates style nodes from JS strings
+                }, {
+                    loader: "css-loader" // translates CSS into CommonJS
+                }, {
+                    loader: "less-loader" // compiles Less to CSS
+                }]
             },
             {
                 test: /\.js$/,
@@ -40,7 +34,6 @@ module.exports = {
         ]
     },
     plugins: [
-        extractLess,
         new WorkboxPlugin.GenerateSW({
             swDest: 'sw.js',
             cacheId: 'magento-pwa-info',
