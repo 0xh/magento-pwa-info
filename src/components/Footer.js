@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Footer = () => {
-    const year = (new Date()).getFullYear();
+const Footer = (props) => {
     return (
         <footer>
             <div className="content-wrapper">
                 <div className="copyright">
-                    <small>&copy; {year} Quinten Clause - Mathijs Delva</small>
+                    <span>{props.slideIndex + 1} / {props.nSlides}</span>
                 </div>
             </div>
         </footer>

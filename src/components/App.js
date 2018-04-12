@@ -10,6 +10,8 @@ class App extends React.Component {
         super();
         this.bodyClick = this.bodyClick.bind(this);
         this.keyStroke = this.keyStroke.bind(this);
+        this.slideIndex = 0;
+        this.nSlides = 0;
     }
 
     showSlide() {
@@ -38,7 +40,9 @@ class App extends React.Component {
 
     componentDidMount() {
         this.slides = SlidesAPI.all();
+        this.nSlides = this.slides.length;
         this.slideIndex = -1;
+        this.forceUpdate(); // rerender to update footer
         let paths = this.props.history.location.pathname.split('/');
         if (paths[2]) {
             this.slideIndex = SlidesAPI.slideIndex(paths[2]);
@@ -91,7 +95,7 @@ class App extends React.Component {
         return (
             <div className="page-wrapper">
                 <Main />
-                <Footer />
+                <Footer slideIndex={this.slideIndex} nSlides={this.nSlides} />
             </div>
         )
     }
