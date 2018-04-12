@@ -1,1 +1,7 @@
 node_modules/
+pub/main.css
+pub/precache-manifest.*.js
+pub/project.bundle.js
+pub/sw.js
+pub/workbox-v3.0.1/
+
