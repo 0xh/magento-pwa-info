@@ -31,7 +31,9 @@ const PRECACHE_URLS = [
     'img/verdeling.png',
     'md/strategy.md',
     'img/strategy.png',
-    'md/frontcommerce.md'
+    'md/frontcommerce.md',
+    'md/tips.md',
+    'md/demo.md',
 ];
 
 // The install handler takes care of precaching the resources we always need.

@@ -13,8 +13,10 @@ const SlidesAPI = {
         { url: 'deity', name: "Deity", description: "" },
         { url: 'frontcommerce', name: "Front Commerce", description: "" },
         { url: 'strategy', name: "Strategie", description: "" },
+        { url: 'tips', name: "Tips", description: "" },
         { url: 'manifest', name: "Web app manifest file", description: "" },
         { url: 'tools', name: "Tools", description: "" },
+        { url: 'demo', name: "Demo", description: "" },
         { url: 'links', name: "Handige links", description: "" }
     ],
     all: function() { return this.slides},
