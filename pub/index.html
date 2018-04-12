@@ -33,6 +33,11 @@
             if ('serviceWorker' in navigator) {
                 // Use the window load event to keep the page load performant
                 window.addEventListener('load', () => {
+
+                    // This is the experimental service worker from workbox, wich i couldn't get to work on ios
+                    //navigator.serviceWorker.register('/sw.js');
+
+                    // So for the moment i am using custom written script, that does work on ios
                     navigator.serviceWorker.register('/service-worker.js');
                 });
             }
