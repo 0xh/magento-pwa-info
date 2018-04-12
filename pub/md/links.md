@@ -10,3 +10,4 @@ Verschillende artikels over PWA
 - https://developers.google.com/web/fundamentals/primers/service-workers/
 - https://blog.kollegorna.se/service-worker-gotchas-af20a9dab986
 - https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin
+- https://medium.com/@firt/pwas-are-coming-to-ios-11-3-cupertino-we-have-a-problem-2ff49fd7d6ea

@@ -18,6 +18,7 @@ const PRECACHE_URLS = [
     'md/support.md',
     'md/features.md',
     'md/wanneer.md',
+    'md/wanneer2.md',
     'md/toekomst.md',
     'md/deity.md',
     'md/details.md',
