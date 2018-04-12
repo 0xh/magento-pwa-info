@@ -11,7 +11,6 @@ const PRECACHE_URLS = [
     'index.html',
     './', // Alias for index.html
     'main.css',
-    'build/fonts.css',
     'project.bundle.js',
     'site.webmanifest',
     'md/wat.md',

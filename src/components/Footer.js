@@ -5,7 +5,7 @@ const Footer = (props) => {
     return (
         <footer>
             <div className="content-wrapper">
-                <div className="copyright">
+                <div className="pager">
                     <span>{props.slideIndex + 1} / {props.nSlides}</span>
                 </div>
             </div>
