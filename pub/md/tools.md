@@ -8,4 +8,6 @@ http://realfavicongenerator.net/
 
 ### Lighthouse
 
-Analyseert je website. Te vinden in de Chrome devtools onder het tabje Audits.
+Analyseert je website.
+
+Te vinden in de Chrome devtools onder het tabje Audits.
